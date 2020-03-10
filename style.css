@@ -1,0 +1,208 @@
+body, html {
+  margin: 0;
+  padding:0;
+}
+
+.mainSite {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:70%;
+  height: 100vh;
+}
+
+.header p {
+  margin-bottom: 280px;
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 150pt;
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Courier Prime', monospace;
+  font-size: 18pt;
+  width: 30%;
+  height: 100vh;
+}
+
+.sideNav p {
+  line-height: 7vh;
+}
+
+.sideNav a {
+  color: black;
+  padding: 9px 9px 5px 9px;
+  background: linear-gradient(to bottom, var(--thisColor) 0%, var(--thisColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 0;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .4s;
+}
+
+.sideNav a:hover {
+  background-size: 4px 50px;
+  color: #fff;
+}
+
+.bottomNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+
+#arrow {
+  height: 15vh;
+  background-image: url('ARROW-01.png');
+  background-repeat: no-repeat;
+  background-size: 5vw;
+  /* margin-left: 90vw; */
+}
+
+#purple {
+  --thisColor: #602870;
+}
+#gold {
+  --thisColor: #BDA729;
+}
+#gray {
+  --thisColor: #697067;
+}
+#green {
+  --thisColor: #0A4F32;
+}
+#turquoise {
+  --thisColor: #009C8F;
+}
+
+#quote {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 21px;
+}
+
+/* purple page */
+.infoSite {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentContainer {
+  display: flex;
+  height: 85vh;
+  padding: 0 30px 0 30px;
+}
+
+.columnA {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.columnA p {
+  font-family: 'Playfair Display', serif;
+  font-size: 130pt;
+  margin-left: 2vw;
+  padding: 80px 30px 30px 30px;
+  color: #000;
+}
+
+.columnB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.columnB p{
+  font-family: 'Courier Prime', monospace;
+  font-size: 18pt;
+  padding: 50px;
+  color: #602870; /* default purple*/
+  margin-bottom: 90px;
+  margin-right: 10vw;
+}
+
+/* Gold page */
+#goldText {
+  color: #87771E;
+}
+
+/* Grey page */
+#grayText {
+  color: #585E57;
+}
+
+/* Green page */
+#greenText {
+  color: #0A4F32;
+}
+
+/* Turquoise page */
+#turquoiseText {
+  color: #009C8F;
+}
+#turquoiseTextSize {
+  font-size: 100pt;
+  margin-top: 20vh;
+}
+
+/* Purple2: Amethyst page */
+.topContainer {
+  display: flex;
+  height: 85vh;
+}
+.topContainer img {
+  width: 40vw;
+  height: 85vh;
+  object-fit: cover;
+  object-position: top;
+}
+.topContainer p{
+  width: 30vw;
+}
+.topContainer .columnB p:first-child {
+  font-family: 'Playfair Display', serif;
+  font-size: 90pt;
+  color: black;
+  margin-bottom: -50px;
+}
+
+/* Purple rose page */
+.purpleContainer {
+  background-color: #6E1B84; /* alternative color: #3B0C66; */
+  height: 85vh;
+}
+
+/* gold rose page */
+.goldContainer {
+  background-color: #87771E;
+  height: 85vh;
+}
+
+/* gray rose page */
+.grayContainer {
+  background-color: #585E57;
+  height: 85vh;
+}
+
+/* green rose page */
+.greenContainer {
+  background-color: #0A4F32;
+  height: 85vh;
+}
+
+/* turquoise rose page */
+.turquoiseContainer {
+  background-color:#009C8F;
+  height: 85vh;
+}
