@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   padding:0;
+  overflow: hidden;
 }
 
 .mainSite {
@@ -17,7 +18,7 @@ body, html {
 }
 
 .header p {
-  margin-bottom: 280px;
+  margin-bottom: 270px;
   margin-top: 0;
   font-family: 'Playfair Display', serif;
   font-size: 150pt;
@@ -61,14 +62,6 @@ body, html {
   height: 15vh;
 }
 
-#arrow {
-  height: 15vh;
-  background-image: url('ARROW-01.png');
-  background-repeat: no-repeat;
-  background-size: 5vw;
-  /* margin-left: 90vw; */
-}
-
 #purple {
   --thisColor: #602870;
 }
@@ -83,11 +76,6 @@ body, html {
 }
 #turquoise {
   --thisColor: #009C8F;
-}
-
-#quote {
-  font-family: 'Homemade Apple', cursive;
-  font-size: 21px;
 }
 
 /* purple page */
@@ -118,9 +106,10 @@ body, html {
 }
 
 .columnB {
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: flex-end;
 }
 .columnB p{
@@ -128,13 +117,15 @@ body, html {
   font-size: 18pt;
   padding: 50px;
   color: #602870; /* default purple*/
-  margin-bottom: 90px;
-  margin-right: 10vw;
+  margin: 10px 10vw 90px 0;
 }
 
 /* Gold page */
 #goldText {
   color: #87771E;
+}
+#goldTextSize {
+  font-size: 70pt;
 }
 
 /* Grey page */
@@ -152,8 +143,8 @@ body, html {
   color: #009C8F;
 }
 #turquoiseTextSize {
-  font-size: 100pt;
-  margin-top: 20vh;
+  font-size: 98pt;
+  margin-top: 33vh;
 }
 
 /* Purple2: Amethyst page */
@@ -161,43 +152,28 @@ body, html {
   display: flex;
   height: 85vh;
 }
+
 .topContainer img {
   width: 40vw;
   height: 85vh;
   object-fit: cover;
   object-position: top;
 }
+
 .topContainer p{
   width: 30vw;
 }
+
 .topContainer .columnB p:first-child {
   font-family: 'Playfair Display', serif;
   font-size: 90pt;
   color: black;
-  margin-bottom: -50px;
-}
-
-/* Purple rose page */
-.purpleContainer {
-  background-color: #6E1B84; /* alternative color: #3B0C66; */
-  height: 85vh;
+  margin-bottom: -70px;
 }
 
 /* gold rose page */
 .goldContainer {
   background-color: #87771E;
-  height: 85vh;
-}
-
-/* gray rose page */
-.grayContainer {
-  background-color: #585E57;
-  height: 85vh;
-}
-
-/* green rose page */
-.greenContainer {
-  background-color: #0A4F32;
   height: 85vh;
 }
 
