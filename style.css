@@ -170,15 +170,3 @@ body, html {
   color: black;
   margin-bottom: -70px;
 }
-
-/* gold rose page */
-.goldContainer {
-  background-color: #87771E;
-  height: 85vh;
-}
-
-/* turquoise rose page */
-.turquoiseContainer {
-  background-color:#06c9b9;
-  height: 85vh;
-}
